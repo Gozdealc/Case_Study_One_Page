@@ -1,0 +1,150 @@
+/*
+Project Name : Miuul SPA One Page
+Project Version : v1.0.0
+*/
+
+:root {
+    --miuul_bg_bolor:#525050;
+    --miuul_color: rgb(228, 225, 225);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px !important;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background-color: var(--miuul_bg_bolor);
+    color: var(--miuul_color);
+}
+
+p{
+    text-align: justify;
+    padding: 0.7rem 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.1rem auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img:hover {
+    opacity: 0.8;
+}
+.miuul_line_clamp5{
+    display: -webkit-box;
+    overflow:auto;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.miuul_line_clamp10{
+    display: -webkit-box;
+    overflow:auto;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+.miuul_line_clamp15{
+    display: -webkit-box;
+    overflow: auto;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+}
+#miuul_header_id{
+    background-image: url(./img/Adsız\ tasarım.png);
+    background-position: 49% 49%;
+    background-size: cover;
+    z-index: -1;
+    height: 95vh;
+    padding-top: 14rem;
+    text-align: center;
+}
+#miuul_header_heading_id {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #525050 ;
+    opacity: 0.6;
+    padding: 1rem;
+}
+#miuul_header_parag_id {
+    text-align: center;
+    color: white;
+    background-color: #525050 ;
+    opacity: 0.6;
+    padding: 1rem;
+}
+.miuul_header_icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 4%;
+    /* border: 1px solid rgba(0, 0, 0.9); */
+    font-size: 2rem;
+}
+
+#miuul_navbar_id a {
+    color: white;
+}
+#miuul_linkedin_id{
+ color: blueviolet;
+}
+#miuul_youtube_id{
+    color: red;
+}
+#miuul_github_id{
+    color: orange;
+}
+
+section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#section_blog_id {
+    background: rgb(1, 85, 1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#section_blog_id .card {
+    margin-bottom: 2rem;
+}
+#back_to_top_id {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: rgb(94, 1, 1);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+#back_to_top_id:hover {
+    font-size: 3rem;
+}
+#miuul_footer_id {
+    background-color: black;
+    color: rgb(228, 225, 225);
+    text-align: center;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
