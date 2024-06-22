@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <!-- TİTLE -->
-    <title>Miuul SPA (One Page)</title>
+    <title>My CV</title>
     <!-- Dil karakter bozukluğunu önlemek -->
     <meta charset="UTF-8">
     <!-- Responsive Design -->
@@ -16,71 +16,110 @@
     <!-- Favicon -->
 
     <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <!-- Tailwind -->
+     <script src="https://cdn.tailwindcss.com"></script>
+  
     <!-- External CSS -->
      <link rel="stylesheet" href="miuul.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#miuul_navbar_id">
     <noscript>Your browser doesn't support JavaScript</noscript>
     <!-- START CODES -->
 
-
     <!-- header start -->
      <header id="miuul_header_id">
-        <img src="" alt="miuul picture isn't show">
-        <p id="miuul_header_parag_id">FrontEnd Öğreniyorum</p>
-        <a href="#" class="miuul_header_icon">LinkedIn</a>
-        <a href="#" class="miuul_header_icon">YouTube</a>
-        <a href="#" class="miuul_header_icon">Github</a>
+        <!-- <img src="" alt="miuul picture isn't show"> -->
+        <h1 id="miuul_header_heading_id">MIUUL FRONTEND EĞİTİMİ</h1>
+        <p id="miuul_header_parag_id">Html5, Css3, JavaScript, Tailwind, Boostrap, Node Js</p>
+        <a href="#" id="miuul_linkedin_id" class="miuul_header_icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" id="miuul_youtube_id" class="miuul_header_icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" id="miuul_github_id" class="miuul_header_icon"><i class="fa-brands fa-github"></i></a>
      </header>
     <!-- header end -->
-
+<br><br><br><br><br>
     <!-- main start -->
-     <main>
+    <main class="h-screen flex items-center justify-center">
         
-        <section id="section_my_cv_id">
-            <form action="#" id="my_cv_form_id">
+        <section id="section_my_cv_id" class="bg-white w-96 p-7 rounded shadow-md">
+            <form action="#" id="my_cv_form_id" method="get">
                 <fieldset>
-                    <legend>My CV</legend>
+                    <legend class="mb-8 text-center font-semibold text-black">My CV</legend>
                     <!-- NAME -->
-                    <label for="my_cv_name_id">Name:</label>
-                    <input type="text" name="my_cv_name" id="my_cv_name_id" placeholder="Enter your name">
+                <div class="mb-4">
+                        <label class="text-sm text-black block font-medium" for="my_cv_name_id">Name:</label>
+                        <input type="text"
+                         name="my_cv_name" 
+                         id="my_cv_name_id" 
+                         placeholder="Enter your name"
+                         autofocus
+                         class="mt-2 p-2 w-full border border-gray-500 rounded-md">
+                </div>
+                    
 
                     <!-- SURNAME -->
-                    <label for="my_cv_surname_id">Surname:</label>
-                    <input type="text" name="my_cv_surname" id="my_cv_surname_id" placeholder="Enter your surname">
+                <div class="mb-4">
+                        <label class="text-sm text-black block font-medium" for="my_cv_surname_id">Surname:</label>
+                        <input type="text" name="my_cv_surname" id="my_cv_surname_id" placeholder="Enter your surname"
+                        autofocus
+                        class="mt-2 p-2 w-full border border-gray-500 rounded-md">
+                </div>
 
                     <!-- EMAİL -->
-                    <label for="my_cv_email_id">Email:</label>
-                    <input type="email" name="my_cv_email" id="my_cv_email_id" placeholder="Enter your email">
+                <div class="mb-4">
+                    <label class="text-sm text-black block font-medium" for="my_cv_email_id">Email:</label>
+                    <input type="email" name="my_cv_email" id="my_cv_email_id" placeholder="Enter your email"
+                    autofocus
+                    class="mt-2 p-2 w-full border border-gray-500 rounded-md">
+                </div>
 
                     <!-- PHONE -->
-                    <label for="my_cv_phone_id">Phone Number:</label>
-                    <input type="tel" name="my_cv_phone" id="my_cv_phone_id" placeholder="Enter your phone number">
+                <div class="mb-4">
+                    <label class="text-sm text-black block font-medium" for="my_cv_phone_id">Phone Number:</label>
+                    <input type="tel" name="my_cv_phone" id="my_cv_phone_id" placeholder="Enter your phone number"
+                    autofocus
+                    class="mt-2 p-2 w-full border border-gray-500 rounded-md">
+                </div>
 
                     <!-- GENDER -->
-                    <label>Gender:</label>
-                    <input type="radio" name="gender">:Bayan
-                    <input type="radio" name="gender">:Bay
+                <div class="mb-4">
+                    <label class="text-sm text-black block font-medium">Gender:</label>
+                    <input type="radio" name="gender" >
+                    <span class="text-black">:Bayan</span>
+                    <input type="radio" name="gender">
+                    <span class="text-black">:Bay</span>
+                </div>
 
                     <!-- ABILITY -->
-                    <label for="">Ability</label>
+                <div class="mb-4">
+                    <label class="text-sm text-black block font-medium" for="">Ability</label>
                     <input type="checkbox">
-                    :html5
-
+                    <span class="text-black">:Html5</span>
+                    <input type="checkbox">
+                    <span class="text-black">:Css3</span>
+                    <input type="checkbox">
+                    <span class="text-black">:Javascript</span>
+                </div>
 
                     <!-- MESSAGE -->
-                    <label for="my_cv_message_id">Message:</label>
-                    <textarea name="my_cv_message" id="my_cv_message_id" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <div class="mb-4">
+                    <label class="text-sm text-black block font-medium" for="my_cv_message_id">Message:</label>
+                    <textarea name="my_cv_message" id="my_cv_message_id" cols="30" rows="10" 
+                    placeholder="Enter your message"
+                    autofocus
+                    class="mt-2 p-2 w-full border border-gray-500 rounded-md"></textarea>
+                </div>
 
                     <!-- SUBMIT -->
-                    <input type="submit" id="my_cv_submit_id" value="Send">
+                <div class="mb-4">
+                    <input type="reset" class="mb-3 w-full bg-black text-white p-2 text-black hover:bg-white hover:text-black" id="my_cv_submit_id" value="Temizle">
+                    <input type="submit" class="w-full bg-black text-white p-2 text-black hover:bg-white hover:text-black" id="my_cv_submit_id" value="Gönder">
+                </div>
+
                 </fieldset>
             </form>
         </section>
@@ -88,6 +127,33 @@
     </main>
     <!-- main end -->
 
+    <br><br><br><br><br><br>
+
+    <!-- Back to top start -->
+     <a href="#miuul_header_id" id="back_to_top_id"><i class="fa-solid fa-caret-up"></i></a>
+     <!-- Back to top end -->
+
+    <!-- footer start -->
+     <footer id="miuul_footer_id">
+        <a href="mailto:mail_adress">Mail Adresiniz:</a>
+        <div>
+            Tarih:
+            <p id="miuul_date_id"></p>
+        </div>
+     </footer>
+    <!-- footer end -->
+
+
+
     <!-- END CODES -->
+
+    <!-- EXTERNAL JS -->
+     <script src="miuul.js"></script>
 </body>
 </html>
+
+
+
+
+
+
